@@ -7245,9 +7245,30 @@ blockquote.pullquote.right {
 #page-header.full_page #spotlight-canvas {
   display: none;
 }
-#page-header.full_page #site-info,
+#page-header.full_page .hero-bg-layer {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+}
+#page-header.full_page .hero-bg-layer > img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+}
+#page-header.full_page #site-info {
+  position: absolute;
+  top: 43%;
+  z-index: 10;
+}
 #page-header.full_page #scroll-down {
-  position: relative;
+  position: absolute;
+  bottom: 10px;
   z-index: 10;
 }
 #page-header.full_page #nav #blog-info {
